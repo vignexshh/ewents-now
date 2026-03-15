@@ -14,5 +14,3 @@ export function DisplayLogo(){
     </div>
   )
 }
-
-export default DisplayLogo

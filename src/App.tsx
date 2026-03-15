@@ -54,7 +54,7 @@ function Login() {
               </Field>
             </FieldGroup>
           </div>
-          <DisplayLogo/>
+          <DisplayLogo />
         </div>
       </div>
     </div>
