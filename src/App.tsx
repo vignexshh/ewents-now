@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
 import { Home } from "@/Home"
-
+import { DisplayLogo } from "@/components/display-logo";
 import {
   Field,
   FieldDescription,
@@ -33,33 +33,28 @@ function Login() {
                   placeholder="name@example.com"
                 />
                 <FieldDescription>
-                  <p className="text-sm">By logging in and using EwentsNow, you agree to our Terms of
-                    Service and Privacy Policy, and confirm that you are at least
-                    18 years old.</p>
+                  <p className="text-sm">
+                    By logging in and using EwentsNow, you agree to our Terms of
+                    Service and Privacy Policy, and confirm that you are at
+                    least 18 years old.
+                  </p>
                 </FieldDescription>
               </Field>
               <Field orientation="horizontal">
                 <Button variant="outline" size="lg">
                   Forgot password?
                 </Button>
-                <Button onClick={() => navigate("/home")} type="submit" size="lg">
+                <Button
+                  onClick={() => navigate("/home")}
+                  type="submit"
+                  size="lg"
+                >
                   Submit
                 </Button>
               </Field>
             </FieldGroup>
           </div>
-          <div className="hidden h-48 w-full items-end justify-end sm:flex">
-            <div className="flex items-center justify-end gap-0.5">
-              <img
-                src="/src/assets/tickets.png"
-                alt="icon"
-                className="h-8 w-8 object-contain"
-              />
-              <h1 className="scroll-m-20 text-left text-3xl font-semibold tracking-tight text-balance">
-                ewents
-              </h1>
-            </div>
-          </div>
+          <DisplayLogo/>
         </div>
       </div>
     </div>
